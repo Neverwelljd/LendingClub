@@ -1,16 +1,17 @@
-## Client's Dequlient Prediction Model Construction for Lending Club
+## Client's Default Prediction Model Construction on Lending Club Public data
 
-This is the course project with machine learning
+**目标**
 
-There are two task:
+本项目主要目的是构建一个精准的用户违约模型，数据主要采用Lending Club公开数据集。在此我们主要是采用机器学习的方法。
 
-#### DEA
-Analyse the variable that has strong relationship with target variable **loan status**, which has transfered as **loan condition** in this project.
+**方法**
 
-#### Feature Engineering
+1. 特征工程，包括数据数据清洗和特征选择，本项目中主要剔除不相关的变量。除此之外我们首先进行EDA对剩下的变量进行分析以保证变量可解释性。之后在再对这些变量进行相关性性分析进一步剔除变量。最后补全缺失值
+2. 使用机器学习方法XGBoost和其他模型进行训练，并且调参。
 
-Select the feature we do not need. Feature with high correlation will be dropped, Besides, we also will filter out the feature with useless information. 
+**结果**
 
-#### Modeling
-We select the
+XGBoost模型AUC值为0.7，略高于其他模型
+
+
 
